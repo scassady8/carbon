@@ -1,0 +1,155 @@
+
+       :root {
+        --background-color: #00777C ;
+        --body-background-color: white;
+        --header-color: #B6383E;
+        --text-color: #064C72;
+        --accent-color-one: #CD7164;
+        --accent-color-two: #85A9Ad;
+        --accent-color-three: #CDA6AA; 
+    }
+    body {
+        margin: 0px;
+        background-color: var(--background-color);
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/082/original/20210523_130718.jpg?1669174403);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px;
+    }
+    h1, h2, h3 {
+        color: var(--header-color); 
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        background-color: rgba(255, 255, 255, .7);
+        font-size: 60px;
+        line-height: 1.5;
+        text-align: center;
+        transform: translate(0px, 200px);
+        width: 110%;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 1.5; 
+    }
+    p {
+        color: var(--text-color);
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    main {
+        background-color: var(--body-background-color)
+    }
+    section {
+        padding: 20px
+    }
+    .gallery img {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.35);
+        border-radius: 5px;
+        width: 100%;
+    }
+    .gallery img:hover {
+        transform: scale(1.25, 1.25);
+    }
+    footer {
+        background-color: var(--background-color);
+        padding: 10px;
+    }
+    footer p {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+    footer a {
+        color: white;
+        opacity: .8;
+    }
+    .grid {
+        display: grid;
+        grid-gap: 30px;
+    }
+    .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 0px;
+    }
+    .grid-3-columns {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    .tip {
+        margin: 0px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tip-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skew-left {
+        transform: skew(10deg, 0deg);
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .skew-right {
+        transform: skew(-10deg, 0deg);
+        width: 60%;
+        display: block;
+        margin: 0 auto
+    }
+    .accent-one-shadow {
+        box-shadow: 10px 10px 0px var(--accent-color-one);
+    }
+    .accent-two-shadow {
+        box-shadow: 10px 10px 0px var(--accent-color-two);
+    }
+    .accent-three-shadow {
+        box-shadow: 10px 10px 0px var(--accent-color-three);
+    }
+    @media (max-width: 960px) {
+        body {
+            margin: 0 10px;
+        }
+        header {
+            padding: 100px 0;
+        }
+        h1 {
+            font-size: 40px;
+            transform: translate(0, 110px);
+            width: 100%;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        .grid {
+            display: block;  
+        }
+        .gallery img:hover {
+            transform: scale(1.1, 1.1);
+        }
+        .skew-right{
+            transform: skew(0, 0);
+            margin: 15px 0;
+            width: 70%;
+        }
+        .skew-left {
+            transform: skew(0, 0);
+            margin: 15px 0;
+            width: 70%;
+        }
+    }
